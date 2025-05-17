@@ -6,7 +6,7 @@ Problem Description
 */
 
 // 三步旋转 反转整个，反转前k个，反转后n-k个
-func rotate_one(nums []int, k int) {
+func rotate(nums []int, k int) {
 	n := len(nums)
 	if n == 0 { // 如果数组为空，则无需操作
 		return
@@ -37,8 +37,4 @@ func rotate_one(nums []int, k int) {
 		nums[k+i] = nums[n-1-i]
 		nums[n-1-i] = temp
 	}
-}
-
-func rotate_two(nums []int, k int) {
-
 }
