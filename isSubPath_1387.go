@@ -1,5 +1,7 @@
 package main
 
+import . "algorithm/common"
+
 /*
 二叉树中的链表
 给你一棵以 root 为根的二叉树和一个 head 为第一个节点的链表。如果在二叉树中，存在一条一直向下的路径，
@@ -10,11 +12,6 @@ package main
 /*
 Definition for singly-linked list.
 */
-
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
 
 /*
 Definition for a binary tree node.
